@@ -4,8 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ahoj, uživateli, mohu ti pomoci sečíst dvě zadaná čísla");
-            Console.WriteLine("=======================================================");
+            //Napište program, který se zeptá na dvě čísla a zobrazí jejich součet.
+
+            Console.WriteLine("Ahoj uživateli, mohu ti pomoci sečíst dvě zadaná čísla");
+            Console.WriteLine("======================================================");
             Console.WriteLine("Zadej první číslo:");
             int cislo1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Zadej druhé číslo:");
