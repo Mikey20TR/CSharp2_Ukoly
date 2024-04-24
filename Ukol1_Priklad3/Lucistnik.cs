@@ -12,7 +12,7 @@ namespace Ukol1_Priklad3
             //Pokud bude pocet 0, metoda Vystrel vypise "Nemam sipy".
             //Napiste program, ktery vytvori lucistnika a vystreli vsechny sipy.
 
-            Lucistnik karel = new Lucistnik(10);
+            Lucistnik karel = new Lucistnik(20);
             for (int i = karel.PocetSipu; i >= 0; i--)
             {
                 karel.Vystrel();
