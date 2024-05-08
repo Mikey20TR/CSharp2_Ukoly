@@ -10,13 +10,13 @@
             Console.WriteLine("");
 
             //// 2. Vytvoř proměnnou typu DateTime a ulož do ní svoje datum narození. Potom vypiš, kolik dnů od té doby uteklo.
-            //DateTime datumNarozeni = new DateTime(0001,01,01);
-            //Console.WriteLine("Zadej datum svého narození:");
-            //datumNarozeni = DateTime.Parse(Console.ReadLine());
-            //string datumText = datumNarozeni.ToString("dd.MM.yyyy");
-            //TimeSpan ts = DateTime.Today - datumNarozeni;
-            //Console.WriteLine($"Od tvého narození dne {datumText} uplynulo {ts.TotalDays} dní");
-            //Console.WriteLine("");
+            DateTime datumNarozeni = new DateTime(0001, 01, 01);
+            Console.WriteLine("Zadej datum svého narození:");
+            datumNarozeni = DateTime.Parse(Console.ReadLine());
+            string datumText = datumNarozeni.ToString("dd.MM.yyyy");
+            TimeSpan ts = DateTime.Today - datumNarozeni;
+            Console.WriteLine($"Od tvého narození dne {datumText} uplynulo {ts.TotalDays} dní");
+            Console.WriteLine("");
 
             // 3. Vytvoř list stringů a vlož do něj 5 různých hodnot.
             List<string> planety = new List<string>() { "Merkur", "Země", "Mars", "Saturn", "Pluto" };
@@ -39,17 +39,17 @@
             Console.WriteLine("");
             Console.WriteLine("");
             // 5. Zjisti, jestli tento list obsahuje nějakou hodnotu pomocí list metody Contains
-            //Console.WriteLine("Zadej libovolnou planetu a zjisti zda ji náš seznam obsahuje:");
-            //string planetaVstup = Console.ReadLine();
-            //if (planety.Contains(planetaVstup))
-            //{
-            //    Console.WriteLine($"Ano, planeta {planetaVstup} je na seznamu");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"Ne, planeta {planetaVstup} není na seznamu");
-            //}
-            //Console.WriteLine("");
+            Console.WriteLine("Zadej libovolnou planetu a zjisti zda ji náš seznam obsahuje:");
+            string planetaVstup = Console.ReadLine();
+            if (planety.Contains(planetaVstup))
+            {
+                Console.WriteLine($"Ano, planeta {planetaVstup} je na seznamu");
+            }
+            else
+            {
+                Console.WriteLine($"Ne, planeta {planetaVstup} není na seznamu");
+            }
+            Console.WriteLine("");
 
             // 6. Vypiš do konzole, kolik je v tom listu prvků a připoj k tomu všechny ty hodnoty (např: "2: modra, zelena").
             Console.Write($"Stále máme v seznamu {planety.Count} planety: ");
