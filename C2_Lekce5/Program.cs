@@ -140,7 +140,7 @@ namespace C2_Lekce5
 
             // 8. Řešení
             List<Zakaznik> reportMilionaru = from Zakaznik in zakaznici
-                                             join Jmeno in banky on Zakaznik.Banka equals z.Symbol
+                                             join Jmeno in banky on Zakaznik.Banka equals Symbol
                                              select new
                                              {
                                                  Jmeno = Zakaznik.Jmeno,
