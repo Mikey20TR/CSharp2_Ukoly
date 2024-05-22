@@ -121,12 +121,12 @@
 
             // 7. Řešení
             
-            List<SkupinaMilionaru> skupinyPodleBanky = zakaznici.GroupBy(z => z.Banka);
-            
-            foreach (var polozka in skupinyPodleBanky)
-            {
-                Console.WriteLine(polozka.Banka + ": " + string.Join(" a ", polozka.Milionari));
-            }
+            //List<SkupinaMilionaru> skupinyPodleBanky = zakaznici.GroupBy(z => z.Banka);
+            //zakaznici.Find(z => z.Zustatek >= 1000000);
+            //foreach (var polozka in skupinyPodleBanky)
+            //{
+            //    Console.WriteLine(polozka.Banka + ": " + string.Join(" a ", polozka.Milionari));
+            //}
 
             // ==========================================		
             // 8. Vytisknete jmeno kazdeho milionare a jeho banky
