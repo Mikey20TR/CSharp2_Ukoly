@@ -55,24 +55,19 @@ namespace C2_Lekce6_BreakOut2
         {
             get
             {
-                return obsah;
+                return obsah = Sirka * Vyska;
             }
-            set
-            {
-                obsah = Sirka * Vyska;
-            }
+            private set { }
+            
         }
         private int obvod;
         public int Obvod
         {
             get
             {
-                return obvod;
+                return obvod = (Sirka * 2) + (Vyska * 2);
             }
-            set
-            {
-                obvod = (Sirka * 2) + (Vyska * 2);
-            }
+            private set { }
         }
 
         public void Zvetsi()
@@ -92,7 +87,7 @@ namespace C2_Lekce6_BreakOut2
         }
         public void VypisInformace()
         {
-            if (Sirka == Vyska)
+                if (Sirka == Vyska)
             {
                 Console.WriteLine("Toto je čtverec");
             }
